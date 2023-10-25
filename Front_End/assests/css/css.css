@@ -83,4 +83,29 @@
     font-weight: bold;
     color: black;
     opacity: 90%;
+    display: inline-block;
+}
+
+
+
+
+
+                                /* Register Form */
+
+
+
+#register{
+    position: relative;
+    top: 68px;
+    left: 513px;
+    font-family: fantasy;
+    font-size: 39px;
+    font-weight: bold;
+    color: black;
+    opacity: 90%;
+    display: inline-block;
+}
+.container{
+    position: relative;
+    top: 168px;
 }
