@@ -9,9 +9,20 @@
     opacity: 70%;
 }*/
 
+/*#testnb{
+    position: relative;
+    top: 10px;
+}*/
 
+#getnav{
+    position: relative;
+    top: 0px;
+}
+.nav-item{
+    font-weight: bold;
+}
 
-                                /* Home Page    */
+                                            /* Home Page    */
 
 
 #homeCar{
@@ -84,6 +95,11 @@
     color: black;
     opacity: 90%;
     display: inline-block;
+}
+
+#slides{
+    position: relative;
+    top: 12px;
 }
 
 
