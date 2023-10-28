@@ -9,8 +9,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.ArrayList;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -36,5 +40,10 @@ public class Car {
     private String backView;
     private String sideView;
     private String internalView;
+
+
+    @OneToMany(mappedBy ="car",cascade =CascadeType.ALL)
+    private List<Rent>rents=new ArrayList<Rent>();
+
 
 }
