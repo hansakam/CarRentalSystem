@@ -11,6 +11,8 @@ import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -28,5 +30,18 @@ public class Rent {
     private String lossDamageWaiver;
     private String bankSlip;
     private String status;
+
+
+    @ManyToOne
+    @JoinColumn(name = "licenceNo",referencedColumnName = "licenceNo")
+    private Driver driver;
+
+    @ManyToOne
+    @JoinColumn(name = "registrationNO" , referencedColumnName = "registrationNO")
+    private Car car;
+
+    @ManyToOne
+    @JoinColumn(name = "customerId",referencedColumnName = "customerId")
+    private Customer customer;
 
 }

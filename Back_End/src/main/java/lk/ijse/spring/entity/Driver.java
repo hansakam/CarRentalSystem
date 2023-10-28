@@ -9,8 +9,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.ArrayList;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -28,5 +32,8 @@ public class Driver {
     private String email;
     private String availability;
 
+
+    @OneToMany(mappedBy = "driver",cascade = CascadeType.ALL)
+    private List<Rent>rents = new ArrayList<Rent>();
 
 }
