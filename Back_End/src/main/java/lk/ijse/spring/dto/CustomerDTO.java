@@ -15,16 +15,16 @@ import lombok.ToString;
 @ToString
 public class CustomerDTO {
 
-    private String id;
+    private String customerId;
     private String name;
     private String address;
-    private int contact;
+    private int contactNo;
     private String email;
     private String nicNo;
-    private String nicFrontImg;
-    private String nicBackImg;
+    private String nicFrontImage;
+    private String nicBackImage;
     private String licenceNo;
-    private String licenceImg;
+    private String licenceImage;
     private String userName;
     private String password;
 }
