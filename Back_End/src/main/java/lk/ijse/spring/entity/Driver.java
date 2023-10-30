@@ -1,8 +1,7 @@
-/**
- * @author :Hansaka Malshan
- * created 10/26/2023---3:09 AM
- */
-package lk.ijse.spring.entity;
+package lk.ijse.spring.entity;/*
+    @author Dasun
+*/
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,9 +21,11 @@ import java.util.List;
 @ToString
 @Entity
 public class Driver {
+
     @Id
     private String licenceNo;
     private String name;
+    private String address;
     private String contactNo;
     private String nicNo;
     private String username;
@@ -32,8 +33,7 @@ public class Driver {
     private String email;
     private String availability;
 
-
     @OneToMany(mappedBy = "driver",cascade = CascadeType.ALL)
-    private List<Rent>rents = new ArrayList<Rent>();
+    private List<Rent> rents = new ArrayList<>();
 
 }

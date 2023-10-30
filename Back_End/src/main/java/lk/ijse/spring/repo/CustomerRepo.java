@@ -1,8 +1,11 @@
-package lk.ijse.spring.repo;
+package lk.ijse.spring.repo;/*
+    @author Dasun
+*/
 
 import lk.ijse.spring.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CustomerRepo extends JpaRepository<Customer, String> {
-    
+public interface CustomerRepo extends JpaRepository<Customer , String> {
+
+
 }

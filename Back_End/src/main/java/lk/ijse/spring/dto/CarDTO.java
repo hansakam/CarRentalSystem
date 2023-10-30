@@ -1,8 +1,6 @@
-/**
- * @author :Hansaka Malshan
- * created 10/28/2023---6:26 PM
- */
-package lk.ijse.spring.dto;
+package lk.ijse.spring.dto;/*
+    @author Dasun
+*/
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -29,7 +27,8 @@ public class CarDTO {
 
     private double dailyRate;
     private double monthlyRate;
-
+    //    private  double freeKmForPrice;
+//    private double freeKmForDuration;
     private double lossDamageWaiver;
     private double priceForExtraKm;
     private double freeMileage;

@@ -1,8 +1,6 @@
-/**
- * @author :Hansaka Malshan
- * created 10/26/2023---3:10 AM
- */
-package lk.ijse.spring.entity;
+package lk.ijse.spring.entity;/*
+    @author Dasun
+*/
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,7 +21,8 @@ import java.util.List;
 @Entity
 public class Car {
     @Id
-    private String reggistrationNo;
+
+    private String registrationNO;
     private String brand;
     private String type;
     private int NoOfPassengers;
@@ -36,14 +35,18 @@ public class Car {
     private double priceForExtraKm;
     private double freeMileage;
     private String status;
+
     private String frontViewImage;
     private String backView;
     private String sideView;
     private String internalView;
 
 
-    @OneToMany(mappedBy ="car",cascade =CascadeType.ALL)
-    private List<Rent>rents=new ArrayList<Rent>();
+    @OneToMany(mappedBy = "car" , cascade = CascadeType.ALL)
+    private List<Rent> rents = new ArrayList<>();
+
+    // maintenances
+
 
 
 }

@@ -1,8 +1,6 @@
-/**
- * @author :Hansaka Malshan
- * created 10/26/2023---3:10 AM
- */
-package lk.ijse.spring.entity;
+package lk.ijse.spring.entity;/*
+    @author Dasun
+*/
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,6 +18,7 @@ import javax.persistence.ManyToOne;
 @ToString
 @Entity
 public class Rent {
+
     @Id
     private String rentId;
     private String date;
@@ -30,6 +29,7 @@ public class Rent {
     private String lossDamageWaiver;
     private String bankSlip;
     private String status;
+
 
 
     @ManyToOne
@@ -43,5 +43,6 @@ public class Rent {
     @ManyToOne
     @JoinColumn(name = "customerId",referencedColumnName = "customerId")
     private Customer customer;
+
 
 }

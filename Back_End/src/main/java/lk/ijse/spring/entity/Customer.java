@@ -1,8 +1,6 @@
-/**
- * @author :Hansaka Malshan
- * created 10/26/2023---3:09 AM
- */
-package lk.ijse.spring.entity;
+package lk.ijse.spring.entity;/*
+    @author Dasun
+*/
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,11 +20,12 @@ import java.util.List;
 @ToString
 @Entity
 public class Customer {
+
     @Id
     private String customerId;
     private String name;
     private String address;
-    private String contactNo;
+    private int contactNo;
     private String email;
     private String nicNo;
     private String licenceNo;
@@ -36,9 +35,9 @@ public class Customer {
     private String nicBackImage;
     private String licenceImage;
 
-
+    //private String status;
 
 
     @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL)
-    private List<Rent>rents =new ArrayList<Rent>();
+    private List<Rent> rents = new ArrayList<>();
 }

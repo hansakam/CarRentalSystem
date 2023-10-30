@@ -1,8 +1,6 @@
-/**
- * @author :Hansaka Malshan
- * created 10/26/2023---3:40 AM
- */
-package lk.ijse.spring.dto;
+package lk.ijse.spring.dto;/*
+    @author Dasun
+*/
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,7 +12,6 @@ import lombok.ToString;
 @Data
 @ToString
 public class AdminDTO {
-
     private String adminId;
     private String name;
     private String contact;

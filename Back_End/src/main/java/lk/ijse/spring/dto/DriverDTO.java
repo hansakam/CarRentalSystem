@@ -1,8 +1,6 @@
-/**
- * @author :Hansaka Malshan
- * created 10/28/2023---6:20 PM
- */
-package lk.ijse.spring.dto;
+package lk.ijse.spring.dto;/*
+    @author Dasun
+*/
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,5 +22,4 @@ public class DriverDTO {
     private String password;
     private String email;
     private String availability;
-
 }

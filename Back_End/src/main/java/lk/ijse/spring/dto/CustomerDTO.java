@@ -1,8 +1,6 @@
-/**
- * @author :Hansaka Malshan
- * created 10/26/2023---3:20 AM
- */
-package lk.ijse.spring.dto;
+package lk.ijse.spring.dto;/*
+    @author Dasun
+*/
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

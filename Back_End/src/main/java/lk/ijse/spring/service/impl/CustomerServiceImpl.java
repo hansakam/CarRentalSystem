@@ -1,8 +1,6 @@
-/**
- * @author :Hansaka Malshan
- * created 10/28/2023---7:21 PM
- */
-package lk.ijse.spring.service.impl;
+package lk.ijse.spring.service.impl;/*
+    @author Dasun
+*/
 
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.entity.Customer;
@@ -13,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.List;
 
 @Service
 @Transactional
@@ -25,28 +22,14 @@ public class CustomerServiceImpl implements CustomerService {
     @Autowired
     ModelMapper mapper;
 
+    @Override
     public void saveCustomer(CustomerDTO dto) {
-        if (repo.existsById(dto.getCustomerId())){
-            throw new RuntimeException(dto.getCustomerId()+"Customer Is already Added !");
+        if(!repo.existsById(dto.getCustomerId())){
+            repo.save(mapper.map(dto, Customer.class));
+        }else {
+            throw new RuntimeException("Customer already added");
         }
-
-        repo.save( mapper.map(dto, Customer.class));
-
     }
 
-    public void deleteCustomer(String id) {
 
-    }
-
-    public List<CustomerDTO> getAllCustomer() {
-        return null;
-    }
-
-    public CustomerDTO findCustomer(String id) {
-        return null;
-    }
-
-    public void updateCustomer(CustomerDTO dto) {
-
-    }
 }
