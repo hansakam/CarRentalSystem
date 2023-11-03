@@ -21,13 +21,14 @@ public class Rent {
 
     @Id
     private String rentId;
+
     private String date;
     private String pickupDate;
     private String returnDate;
     private String pickUpVenue;
     private String returnVenue;
-    private String lossDamageWaiver;
-    private String bankSlip;
+    //private String lossDamageWaiver;
+    //private String bankSlip;
     private String status;
 
 
@@ -43,6 +44,5 @@ public class Rent {
     @ManyToOne
     @JoinColumn(name = "customerId",referencedColumnName = "customerId")
     private Customer customer;
-
 
 }
