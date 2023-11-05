@@ -1,6 +1,4 @@
-package lk.ijse.spring.service.impl;/*
-    @author Dasun
-*/
+package lk.ijse.spring.service.impl;
 
 import lk.ijse.spring.dto.CarDTO;
 import lk.ijse.spring.entity.Car;
@@ -27,7 +25,7 @@ public class CarServerImpl implements CarService {
     @Override
     public void saveCar(CarDTO dto) {
         if(!repo.existsById(dto.getRegistrationNO())){
-        repo.save(mapper.map(dto, Car.class));
+            repo.save(mapper.map(dto, Car.class));
         }else {
             throw new RuntimeException("car already added");
 
@@ -39,6 +37,5 @@ public class CarServerImpl implements CarService {
         List<Car> all = repo.findAll();
         return mapper.map(all,new TypeToken<List<CarDTO>>(){}.getType());
     }
-
 
 }

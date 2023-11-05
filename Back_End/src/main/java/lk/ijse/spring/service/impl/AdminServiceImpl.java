@@ -1,6 +1,4 @@
-package lk.ijse.spring.service.impl;/*
-    @author Dasun
-*/
+package lk.ijse.spring.service.impl;
 
 import lk.ijse.spring.dto.AdminDTO;
 import lk.ijse.spring.entity.Admin;

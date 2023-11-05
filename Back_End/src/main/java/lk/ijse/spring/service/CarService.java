@@ -1,6 +1,4 @@
-package lk.ijse.spring.service;/*
-    @author Dasun
-*/
+package lk.ijse.spring.service;
 
 import lk.ijse.spring.dto.CarDTO;
 import lk.ijse.spring.dto.CustomerDTO;
