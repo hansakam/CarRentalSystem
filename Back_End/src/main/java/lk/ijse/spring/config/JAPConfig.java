@@ -1,6 +1,6 @@
-package lk.ijse.spring.config;/*
-    @author Dasun
-*/
+package lk.ijse.spring.config;
+
+
 
 
 import org.springframework.beans.factory.annotation.Autowired;

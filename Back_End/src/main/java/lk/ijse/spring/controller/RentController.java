@@ -16,6 +16,7 @@ import java.util.List;
 @RequestMapping("/addRent")
 @CrossOrigin
 public class RentController {
+
     @Autowired
     RentService service;
 
