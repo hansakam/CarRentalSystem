@@ -1,6 +1,4 @@
-package lk.ijse.spring.entity;/*
-    @author Dasun
-*/
+package lk.ijse.spring.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,10 +16,10 @@ import javax.persistence.Id;
 public class Login {
 
     @Id
-    private String loginId;
-    private String role;
     private String username;
     private String password;
+    // private String loginId;
+    private String role;
 
 
 }

@@ -9,12 +9,9 @@ import lombok.ToString;
 @NoArgsConstructor
 @Data
 @ToString
-public class AdminDTO {
-    private String adminId;
-    private String name;
-    private String contact;
-    private String email;
+public class LoginDTO {
+
+    private String role;
     private String username;
     private String password;
-
 }

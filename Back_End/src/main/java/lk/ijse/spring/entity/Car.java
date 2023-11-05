@@ -1,6 +1,4 @@
-package lk.ijse.spring.entity;/*
-    @author Dasun
-*/
+package lk.ijse.spring.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -46,7 +44,6 @@ public class Car {
     private List<Rent> rents = new ArrayList<>();
 
     // maintenances
-
 
 
 }

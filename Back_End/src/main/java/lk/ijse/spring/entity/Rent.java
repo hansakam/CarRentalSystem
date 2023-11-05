@@ -1,6 +1,4 @@
-package lk.ijse.spring.entity;/*
-    @author Dasun
-*/
+package lk.ijse.spring.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -44,5 +42,7 @@ public class Rent {
     @ManyToOne
     @JoinColumn(name = "customerId",referencedColumnName = "customerId")
     private Customer customer;
+
+
 
 }

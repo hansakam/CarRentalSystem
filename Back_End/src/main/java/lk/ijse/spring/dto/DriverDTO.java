@@ -1,6 +1,4 @@
-package lk.ijse.spring.dto;/*
-    @author Dasun
-*/
+package lk.ijse.spring.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
