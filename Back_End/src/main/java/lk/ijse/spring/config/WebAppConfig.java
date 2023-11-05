@@ -1,6 +1,4 @@
-package lk.ijse.spring.config;/*
-    @author Dasun
-*/
+package lk.ijse.spring.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

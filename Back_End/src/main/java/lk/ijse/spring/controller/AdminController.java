@@ -1,6 +1,4 @@
-package lk.ijse.spring.controller;/*
-    @author Dasun
-*/
+package lk.ijse.spring.controller;
 
 import lk.ijse.spring.dto.AdminDTO;
 import lk.ijse.spring.service.AdminService;
@@ -15,16 +13,18 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 public class AdminController {
 
-    @Autowired
-    AdminService service;
+
+
+        @Autowired
+        AdminService service;
 
 
 
 
-    @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil saveAdmin(@RequestBody AdminDTO dto){
-        service.saveAdmin(dto);
-        return new ResponseUtil("200","Admin added",dto);
-    }
+        @ResponseStatus(HttpStatus.CREATED)
+        @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+        public ResponseUtil saveAdmin(@RequestBody AdminDTO dto){
+            service.saveAdmin(dto);
+            return new ResponseUtil("200","Admin added",dto);
+        }
 }

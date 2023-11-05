@@ -1,6 +1,4 @@
-package lk.ijse.spring.controller;/*
-    @author Dasun
-*/
+package lk.ijse.spring.controller;
 
 import lk.ijse.spring.dto.DriverDTO;
 import lk.ijse.spring.service.DriverService;
@@ -18,7 +16,7 @@ public class DriverController {
 
     @PostMapping
     public ResponseUtil saveDriver(@RequestBody DriverDTO dto){
-         service.saveDriver(dto);
+        service.saveDriver(dto);
         return new ResponseUtil("200","Driver added",dto);
     }
 }

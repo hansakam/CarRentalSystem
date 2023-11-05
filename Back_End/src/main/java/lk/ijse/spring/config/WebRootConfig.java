@@ -1,6 +1,4 @@
-package lk.ijse.spring.config;/*
-    @author Dasun
-*/
+package lk.ijse.spring.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

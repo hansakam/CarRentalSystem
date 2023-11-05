@@ -1,6 +1,4 @@
-package lk.ijse.spring.controller;/*
-    @author Dasun
-*/
+package lk.ijse.spring.controller;
 
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.service.CustomerService;
@@ -13,6 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.List;
 
 @RestController
 @RequestMapping("/customer")
@@ -44,6 +43,13 @@ public class CustomerController {
 
         }
         return new ResponseUtil("Ok", "Successfully Saved", null);
+
+    }
+
+    @GetMapping
+    public ResponseUtil getAllCustomer(){
+        List<CustomerDTO> allCustomer = service.getAllCustomers();
+        return new ResponseUtil("OK","Successfull",allCustomer);
 
     }
 

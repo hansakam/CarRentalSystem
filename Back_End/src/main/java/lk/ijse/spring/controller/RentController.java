@@ -52,4 +52,30 @@ public class RentController {
         List<RentDTO> allRentRequest = service.rentRequest();
         return new ResponseUtil("Ok","ok",allRentRequest);
     }
+
+
+    @PutMapping("/updateRent")
+    public ResponseUtil rentCar(@RequestBody RentDTO dto){
+        service.rentCar(dto);
+        System.out.println(dto);
+        return new ResponseUtil("ok" ,"booking successful",dto);
+    }
+
+    @PutMapping(params = "rentId")
+    public ResponseUtil driverAvailability(@RequestParam String rentId, @RequestParam String option){
+        service.updateDriverAvailability(rentId , option);
+        return new ResponseUtil("ok" ,"booking successful"," ");
+    }
+
+    @PutMapping(params ="/updateCar/{rentId}")
+    public ResponseUtil carAvailability(@RequestParam String rentId, @RequestParam String option){
+        service.updateCarAvailability(rentId , option);
+        return new ResponseUtil("ok" ,"booking successful"," ");
+    }
+
+    @DeleteMapping(params = {"rentId"})
+    public ResponseUtil deleteRent(@RequestParam String licenceNo) {
+        service.deleteDriver(licenceNo);
+        return new ResponseUtil("200", "Deleted", null);
+    }
 }
